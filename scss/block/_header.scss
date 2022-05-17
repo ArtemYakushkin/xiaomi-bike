@@ -1,0 +1,33 @@
+.header {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+        margin-right: 70px;
+    }
+
+    &__menu-list {
+        display: flex;
+    }
+
+    &__menu-item + &__menu-item {
+        margin-left: 10px;
+    }
+
+    &__menu-link {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.21;
+        padding: 43px 20px;
+        transition: all 1s;
+    }
+
+        &__menu-link:hover {
+            background-color: #131313;
+            color: #ffffff;
+        }
+}

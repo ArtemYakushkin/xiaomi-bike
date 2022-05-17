@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    color: #131313;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}

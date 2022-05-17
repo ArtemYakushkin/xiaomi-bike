@@ -1,0 +1,108 @@
+.hero {
+    padding: 100px 0 150px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1.2;
+        margin: 60px 0 5px;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.21;
+        color: #6F6F6F;
+        margin-bottom: 60px;
+    } 
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.21;
+        max-width: 420px;
+        margin-bottom: 20px;
+    }
+
+    &__column_slider {
+        flex-basis: 630px;
+        margin-left: 30px;
+        max-width: 630px;
+
+    }
+
+    &__link {
+        margin-top: 80px;
+        display: inline-block;
+        background-color: #131313;
+        color: #ffffff;
+        padding: 28px 81px;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 1.1em;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 25px;
+    }
+
+    &__item {
+        max-width: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: 58px;
+    }
+
+    &__item-num {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.21;
+        text-transform: uppercase;
+    }
+
+    &__item-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.25;    
+        margin: auto 0;
+    }
+    
+}
+
+.hero__slider .slick-dots {
+    right: 0;
+    top: 50px;
+}
+
+.slick-dots {
+    position: absolute;
+}
+
+.slick-dots li + li {
+    padding-top: 10px;
+}
+
+.slick-dots button {
+    font-size: 0;
+    padding: 0;
+    border: none;
+    background-color: #131313;
+    border-radius: 7px;
+    width: 2px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.slick-dots button:hover,
+.slick-active button {
+    background-color: #ff4040;
+}

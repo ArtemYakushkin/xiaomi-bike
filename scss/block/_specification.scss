@@ -1,0 +1,33 @@
+.specification {
+    &__inner {
+        display: flex;
+    }
+
+    &__img {
+        margin-right: 60px;
+        flex-basis: 570px;
+        object-fit: cover;
+    }
+
+    &__list {
+        flex-basis: 490px;
+    }
+
+    &__item + &__item {
+        margin-top: 50px;
+    } 
+
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.18;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.21;
+        max-width: 450px;
+    }
+}
