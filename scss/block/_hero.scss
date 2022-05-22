@@ -45,6 +45,11 @@
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 1.1em;
+        transition: all 0.3s;
+    }
+
+    &__link:hover {
+        background-color: #ff4040;
     }
 
     &__list {
@@ -105,4 +110,55 @@
 .slick-dots button:hover,
 .slick-active button {
     background-color: #ff4040;
+}
+
+@media (max-width: 1110px) {
+    .hero {
+        padding: 0 0 50px;
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__text {
+            max-width: 100%;
+        }
+        &__link {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        &__column_slider {
+            max-width: 100%;
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 1110px) {
+    .hero {
+        &__title {
+            font-size: 44px;
+            line-height: 1.2;
+            margin: 30px 0 5px;
+        }
+        &__subtitle {
+            font-size: 22px;
+            line-height: 1.21;
+            margin-bottom: 30px;
+        }
+        &__list {
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 50%;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .hero {
+        &__link {
+            letter-spacing: 0.9em;
+            padding: 15px 15px 15px 28px;
+        }
+    }
 }

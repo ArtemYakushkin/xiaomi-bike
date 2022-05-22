@@ -1,0 +1,10 @@
+.slider {
+    &__items .slick-dots {
+        top: 0;
+        left: 0;
+    }
+
+    &__item {
+        padding-left: 50px;
+    }
+}

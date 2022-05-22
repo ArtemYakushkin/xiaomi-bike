@@ -5,12 +5,12 @@
 
     &__img {
         margin-right: 60px;
-        flex-basis: 570px;
+        max-width: 570px;
         object-fit: cover;
     }
 
     &__list {
-        flex-basis: 490px;
+        flex-basis: 570px;
     }
 
     &__item + &__item {
@@ -29,5 +29,27 @@
         font-size: 14px;
         line-height: 1.21;
         max-width: 450px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .specification {
+        &__img {
+            display: none;
+        }
+        &__list {
+            flex-basis: 100%;
+        }
+        &__text {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .specification {
+        &__item+&__item {
+            margin-top: 25px;
+        }
     }
 }

@@ -26,8 +26,56 @@
         transition: all 1s;
     }
 
-        &__menu-link:hover {
-            background-color: #131313;
-            color: #ffffff;
+    &__menu-link:hover {
+        background-color: #131313;
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        &__menu {
+            margin-right: 0;
         }
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        &__inner {
+            display: block;
+        }
+        &__menu {
+            margin-top: 50px;
+        }
+
+        &__logo-img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__menu-list {
+            justify-content: space-evenly;
+        }
+
+        &__menu-link {
+            padding: 25px 20px;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        &__menu-list {
+            justify-content: space-between;
+        }
+
+        &__menu {
+            margin-top: 30px;
+        }
+    
+        &__menu-link {
+            padding: 25px 0;
+            font-size: 11px;
+        }
+    }
 }
